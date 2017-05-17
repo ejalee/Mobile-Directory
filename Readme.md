@@ -1,5 +1,6 @@
 ## Project Description
 - An MVP achieved at PageCarton's (http://pagecarton.org) Bootcamp MY-07
+- Implemented Using Ionic 2
 
 ## App Dependencies
 - NodeJS - https://nodejs.org
