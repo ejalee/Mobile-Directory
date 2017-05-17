@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar color="mynav">
+    <ion-title text-center>Contact Us</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="pin"></ion-icon>&nbsp;&nbsp;Office Address:</ion-card-header>
+    <ion-card-content>
+      Ibadan, Nigeria.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="text-align: left">
+      <ion-icon name="thumbs-up"></ion-icon>&nbsp;&nbsp;Follow US</ion-card-header>
+
+    <ion-list>
+      <button ion-item (click)="facebook('facebook.com/PageCarton')">
+      <ion-icon name="logo-facebook" item-left></ion-icon>Facebook
+    </button>
+
+      <button ion-item (click)="twitter('twitter.com/PageCarton')">
+      <ion-icon name="logo-twitter" item-left></ion-icon>Twitter
+    </button>
+
+      <button ion-item (click)="linkedin('linkedin.com/company/PageCarton')">
+      <ion-icon name="logo-linkedin" item-left></ion-icon>Linkedin
+    </button>
+
+      <button ion-item (click)="google('plus.google.com/+AdigunAzeez')">
+      <ion-icon name="logo-googleplus" item-left></ion-icon>Google+
+    </button>
+
+      <button ion-item (click)="instagram('instagram.com/PageCarton')">
+      <ion-icon name="logo-instagram" item-left></ion-icon>Instagram
+    </button>
+
+      <button ion-item (click)="email('adigunazeez@gmail.com')">
+      <ion-icon name="mail" item-left></ion-icon>Email
+    </button>
+
+      <button ion-item (click)="phone('+2348162081195')">
+      <ion-icon name="call" item-left></ion-icon>Phone
+    </button>
+
+    </ion-list>
+    <ion-row class="spacer"></ion-row>
+
+  </ion-card>
+  <ion-row class="spacer"></ion-row>
+  <button md ion-button color="mynav" round (click)="showAlert()">Notice!</button>
+
+
+</ion-content>

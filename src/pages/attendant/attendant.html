@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="mynav">
+    <ion-title text-center> Profile :: {{attendee.nick}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-attendant" text-wrap>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{ attendee.picture }}">
+      </ion-avatar>
+      {{ attendee.name }}<br>a.k.a &quot;{{ attendee.nick }}&quot;
+    </ion-item>
+
+    <ion-card-content>
+      <img src="{{attendee. picture }}" text-center><br>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row class="spacer"></ion-row>
+  <ion-icon name="call"></ion-icon>&nbsp;&nbsp;{{attendee.phone}}<br>
+  <p style="font-variant: normal">
+    <ion-icon name="mail-open"></ion-icon>&nbsp;&nbsp; {{attendee.email}}</p>
+  <ion-icon name="ribbon" class="full"></ion-icon>&nbsp;&nbsp; Hobby: {{attendee.hobby}}
+  <ion-row class="spacer2"></ion-row>
+  <ion-icon name="quote"></ion-icon>&nbsp;&nbsp; {{attendee.Quote}}<br>
+
+  <ion-fab right edge>
+    <button ion-fab color="mynav" mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <a href="{{ attendee.FB }}" ion-fab target="_system" location="yes" style="text-decoration: none">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="{{ attendee.TW }}" ion-fab target="_system" location="yes" style="text-decoration: none">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="{{ attendee.LinkedIN }}" ion-fab target="_system" location="yes" style="text-decoration: none">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-row class="spacer2"></ion-row>
+  <button md ion-button color="mynav" round (click)="goBack()"><ion-icon name="arrow-round-back"></ion-icon>&nbsp;&nbsp;Back!</button>
+
+</ion-content>

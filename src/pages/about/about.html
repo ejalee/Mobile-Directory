@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="mynav">
+    <ion-title text-center>About The Bootcamp</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let a of about" text-wrap>
+      <div>
+        <ion-icon name="transgender"></ion-icon>&nbsp;&nbsp;{{a.description}}</div>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let p of portfolio" text-wrap>
+      <div text-center>
+        <ion-icon name="bonfire"></ion-icon>&nbsp;&nbsp;{{p.title}}</div><br>
+      <div>
+        <ion-icon name="transgender"></ion-icon>&nbsp;&nbsp;{{p.folio}}</div>
+    </ion-item>
+  </ion-list>
+
+  <ion-row class="spacer"></ion-row>
+  <button md ion-button color="mynav" round (click)="showAlert()">Appreciation!</button>
+  <ion-row class="spacer"></ion-row>
+  <div>&copy;&nbsp;2017 Ejalee Inc. All Rights Reserved.</div>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="mynav">
+    <ion-title text-center>PageCarton Bootcamp Attendees</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-attendees">
+
+  <ion-searchbar (ionInput)="getAttendees($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let attendee of attendees" text-wrap>
+      <ion-avatar item-left>
+        <img src={{attendee.picture}}>
+      </ion-avatar>
+      Nick: {{attendee.nick}}<br> Quote: {{attendee.Quote}}<br>
+      <ion-row class="spacer"></ion-row>
+      <ion-icon name="call"></ion-icon>&nbsp;&nbsp;: {{attendee.phone}}
+      <button ion-button round (click)="attendant(attendee)" color="mynav" item-right>View</button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
