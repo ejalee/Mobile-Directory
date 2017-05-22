@@ -36,3 +36,7 @@ key.keystore
 PageCarton.apk
 .io-config.json
 .editorconfig
+key.keystore
+mykey.keystore
+pageCarton.apk
+android-release-unsigned.apk
